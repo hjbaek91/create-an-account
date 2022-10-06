@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Create An Account</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form>
+      <h1
+        style="
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bold;
+          font-size: 28px;
+        "
+      >
+        Create An Account
+      </h1>
+      <br />
+
+      <label
+        for="first-name"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >First name</label
+      >
+      <input
+        required
+        id="first-name"
+        placeholder="First Name"
+        type="text"
+      /><br />
+
+      <label
+        for="last-name"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >Last name</label
+      >
+      <input
+        required
+        id="last-name"
+        placeholder="Last Name"
+        type="text"
+      /><br />
+
+      <label
+        for="email"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >Email</label
+      >
+      <input required id="email" placeholder="Email" type="email" /><br />
+
+      <label
+        for="username"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >Username</label
+      >
+      <input required id="username" placeholder="Username" type="text" /><br />
+
+      <label
+        for="password"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >Password</label
+      >
+      <input
+        required
+        id="password"
+        placeholder="Password"
+        type="password"
+        minlength="10"
+      /><br />
+
+      <label
+        for="birth-date"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >Birth date</label
+      >
+      <input required id="birth-date" type="date" /><br />
+
+      <label
+        for="how-happy"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >How happy are you?</label
+      >
+      <input required id="how-happy" type="range" list="tickmarks" />
+      <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+        <option value="100"></option></datalist
+      ><br />
+
+      <label
+        for="fav-color"
+        style="font-family: 'Times New Roman', Times, serif; font-size: 17px"
+        >What is your fav. color?</label
+      >
+      <input required id="fav-color" type="color" /><br />
+
+      <input type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>
